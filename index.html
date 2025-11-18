@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>메타버스 작품 체험관</title>
+  <style>
+    body {
+      background: #181c27;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Orbitron', 'Pretendard', Arial, sans-serif;
+      color: #fff;
+    }
+    h1 {
+      margin-bottom: 24px;
+      font-size: 2.8rem;
+      letter-spacing: 4px;
+      color: #14c6e3;
+      text-shadow: 0 0 12px #61e4ff, 0 0 20px #fff8, 0 0 2px #fff;
+    }
+    .group-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      justify-content: center;
+      max-width: 900px;
+    }
+    .group-btn {
+      background: linear-gradient(120deg, #14c6e3 0%, #70ff57 80%, #7b61ff 100%);
+      box-shadow:
+        0 0 15px #14c6e399,
+        0 0 30px #6141ff60,
+        0 0 60px #70ff5780;
+      color: #fff;
+      border: none;
+      border-radius: 1.5em;
+      cursor: pointer;
+      padding: 1.5em 2.3em;
+      margin: 0.5em 0;
+      font-size: 1.13rem;
+      letter-spacing: 1.1px;
+      font-weight: 800;
+      transition: transform 0.22s, box-shadow 0.22s, background 0.22s;
+      position: relative;
+      overflow: hidden;
+      outline: none;
+      z-index: 1;
+    }
+    .group-btn:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: -40%;
+      left: -40%;
+      width: 180%;
+      height: 180%;
+      background: radial-gradient(circle, #fff9 2%, transparent 85%);
+      filter: blur(18px);
+      opacity: 0.1;
+      transition: opacity 0.25s;
+    }
+    .group-btn:hover, .group-btn:focus {
+      transform: scale(1.075) rotate(-2deg);
+      background: linear-gradient(120deg, #7b61ff 0%, #14c6e3 80%, #70ff57 100%);
+      box-shadow:
+        0 0 30px #70ff5788,
+        0 0 60px #14c6e3aa,
+        0 0 100px #7b61ff66;
+    }
+    .group-btn:hover:before, .group-btn:focus:before {
+      opacity: 0.35;
+    }
+    .group-label {
+      font-size: 1.05em;
+      color: #fffdd0;
+      margin-bottom: 2px;
+      opacity: 0.85;
+      display: block;
+      font-family: 'Pretendard', Arial, sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+    }
+    .group-title {
+      display: block;
+      font-size: 1.09em;
+      margin-top: 0.2em;
+      color: #FFFFFF;
+      text-shadow: 0 0 12px #61e4ffa0, 0 0 2px #fff;
+    }
+    @media (max-width: 900px) {
+      .group-list { flex-direction: column; align-items: center;}
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:wght@600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>메타버스 작품 체험관</h1>
+  <div class="group-list">
+    <button class="group-btn" onclick="window.open('https://youtu.be/b6BKmrMd_E0','_blank')">
+      <span class="group-label">1모둠</span>
+      <span class="group-title">더러운 바다와 깨끗한 바다</span>
+    </button>
+    <button class="group-btn" onclick="window.open('https://youtu.be/7KBU2lCkzBc','_blank')">
+      <span class="group-label">2모둠</span>
+      <span class="group-title">전설의 천연 가오리 찾아 떠나기</span>
+    </button>
+    <button class="group-btn" onclick="window.open('https://youtu.be/v3CIoiY2RX4','_blank')">
+      <span class="group-label">3모둠</span>
+      <span class="group-title">시간의 변화에 따른 항구의 변화</span>
+    </button>
+    <button class="group-btn" onclick="window.open('https://youtu.be/3TxpMxNxS7E','_blank')">
+      <span class="group-label">4모둠</span>
+      <span class="group-title">바다와 공존하는 미래도시</span>
+    </button>
+    <button class="group-btn" onclick="window.open('https://youtu.be/Yls_lLZmLcI','_blank')">
+      <span class="group-label">5모둠</span>
+      <span class="group-title">쓰레기 섬의 변화 살펴보기</span>
+    </button>
+    <button class="group-btn" onclick="window.open('https://youtu.be/vGjEwAGFvCg','_blank')">
+      <span class="group-label">6모둠</span>
+      <span class="group-title">바다의 변신</span>
+    </button>
+    <button class="group-btn" onclick="window.open('https://youtu.be/_EbyBF1bbLg','_blank')">
+      <span class="group-label">7모둠</span>
+      <span class="group-title">북극 생명을 위한 해수면 상승 막기</span>
+    </button>
+    <button class="group-btn" onclick="window.open('https://youtu.be/6mL2NadEny0','_blank')">
+      <span class="group-label">8모둠</span>
+      <span class="group-title">역사 속 한장면 임진왜란 재연하기</span>
+    </button>
+  </div>
+</body>
+</html>
